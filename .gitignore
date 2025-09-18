@@ -1,18 +1,41 @@
+######################################
+# Projeto Spring Boot - Maven
+######################################
+
+# Build e dependências
 target/
-!.mvn/wrapper/maven-wrapper.jar
+build/
 !**/src/main/**/target/
 !**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Arquivos gerados pelo Maven Wrapper
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+.mvn/wrapper/MavenWrapperDownloader.java
+
+######################################
+# IDEs
+######################################
 
 ### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
+.idea/
 *.iws
 *.iml
 *.ipr
 
-### Eclipse ###
+### VS Code ###
+.vscode/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### Spring Tool Suite (STS) ###
 .apt_generated
 .classpath
 .factorypath
@@ -21,18 +44,34 @@ target/
 .springBeans
 .sts4-cache
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+######################################
+# Logs e temporários
+######################################
+*.log
+*.out
+*.tmp
+*.swp
+*.swo
+*.bak
+*.class
 
-### VS Code ###
-.vscode/
-
-### Mac OS ###
+######################################
+# Arquivos de sistema
+######################################
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+######################################
+# Outros
+######################################
+HELP.md
